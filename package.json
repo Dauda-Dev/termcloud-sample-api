@@ -10,9 +10,5 @@
   "engines": {
     "node": ">=16"
   },
-  "dependencies": {
-    "pg": "^8.11.5",
-    "redis": "^4.6.13"
-  },
   "license": "MIT"
 }
