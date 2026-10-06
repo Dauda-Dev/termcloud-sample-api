@@ -1,0 +1,14 @@
+{
+  "name": "termcloud-sample-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sample TermCloud app deployable to an Android phone agent.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

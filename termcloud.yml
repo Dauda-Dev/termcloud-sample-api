@@ -1,0 +1,10 @@
+name: sample-api
+type: web
+buildCommand: npm install
+startCommand: node server.js
+startPort: 8080
+healthPath: /health
+replicas: 1
+env:
+  MODE: production
+  GREETING: hello-from-termcloud
