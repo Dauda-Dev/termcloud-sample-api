@@ -5,6 +5,19 @@ startCommand: node server.js
 startPort: 8080
 healthPath: /health
 replicas: 1
+# Expose this app to the internet through cloudflared. Uses a quick tunnel
+# (random *.trycloudflare.com URL) by default. Set `tunnel: named` and provide a
+# TUNNEL_TOKEN env var for a stable hostname.
+public: true
+tunnel: quick
+# Declare managed backing services. On the phone a single shared Postgres
+# server and a single shared Redis server are used; each app gets its own
+# Postgres database (which you create via the DB tunnel) and Redis db index.
+databases:
+  - type: postgres
+    name: sampledb
+  - type: redis
+    name: cache
 env:
   MODE: production
   GREETING: hello-from-termcloud
