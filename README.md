@@ -33,4 +33,4 @@ curl http://127.0.0.1:8080/health
 
 ## Manifest
 
-See [`termcloud.yml`](./termcloud.yml).
+See [`termcloud.yml`](./termcloud.yml).2026-10-12T13:47:52
